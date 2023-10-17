@@ -4,9 +4,15 @@ using namespace std;
 
 class Employee {
 public:
-    char name[30];
+    string name;
     int age;
     double sal;
+
+    Employee(){
+        name = "Default";
+        age = 22;
+        sal = 12000;
+    }
 
     void entry() {
         cout << "Enter employee name: ";
